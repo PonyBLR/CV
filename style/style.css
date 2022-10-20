@@ -78,8 +78,8 @@ header {
 
 .h-description__text {
    font-family: 'Gilroy-Medium';
-   font-size: 20px;
-   line-height: 22px;
+   font-size: 28px;
+   line-height: 35px;
 
    color: #070707;
 
@@ -248,7 +248,7 @@ header {
    display: flex;
    flex-direction: column;
 
-   padding: 113px 0px 0px;
+   padding: 37px 0px 0px;
 
 }
 
@@ -273,9 +273,9 @@ header {
 
 /* backgrounds portfolio*/
 
-.fashion  {
+/* .fashion  {
    background-image: url('../assets/images/mom1.png');
-}
+} */
 
 .reebok {
    background-image: url('../assets/images/trav4.png');
@@ -437,7 +437,17 @@ header {
    margin-bottom: 0px;
 }
 }
-
+@media screen  and (max-width: 1000px) {
+   .s-programs__desccription {
+      flex-wrap: wrap;
+      width: 30%;
+   }
+   .skills__text {
+   
+      margin: 0px 0px 38px;
+      
+  }
+}
 @media screen  and (max-width: 767px) {
    .container {
       margin: 0 auto;
@@ -631,4 +641,103 @@ header {
   
    text-decoration-line: none;
  
+}
+
+.certificate{
+   text-align: center;
+   font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    margin: 0px 0px 69px;
+    
+    margin: 20px;
+}
+.certificate p{
+   color: #52235b;
+}
+.certificate img{
+   width: 60%;
+}
+@media (max-width: 1000px) {
+   .certificate img{
+      width: 90%;
+   }
+}
+
+/* -------burger menu------- */
+
+.burger__header{
+   display: none;
+}
+@media (max-width: 767px) {
+   .burger__menu{
+      display: block;
+      color: black;
+      width: 200px;
+      height: 200px;
+   }
+}
+@media screen and (max-width: 767px){
+.header__container {
+    display: none;
+}
+header{
+   position: relative;
+   display: block;
+}
+.burger__header{
+   top: -1000px;
+  background: #c1ade8;
+   position: absolute;
+   width: 100%;
+   display:block;
+   z-index: 1000;
+}
+.burger__nav a{
+   margin-left: 5%;
+   padding-top: 10px;
+   display: block;
+ flex-direction: column;
+}
+.burger__nav a:last-child{
+   padding-bottom: 20px;
+}
+.close {
+   position: absolute;
+   top: 10%;
+   right: 5%;
+   display: block;
+   width: 25px;
+   height: 25px;
+   --weight: 1px;
+   --aa: 1px; /* anti-aliasing */
+   --color: rgb(70, 5, 57);
+   border-radius: 3px;
+   background:
+     linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
+     linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+ }
+ .active{
+   left: 0;
+ }
+ .lock{
+   overflow: hidden;
+ }
+ 
+}
+.portfolio__description{
+ 
+}
+.portfolio__description img{
+ 
+   width: 100%;
+   display: block;
+   margin: 0px;
+}
+.p-description__bg {
+  
+   height: 0px;
+}
+.portfolio__wrapper{
+   
 }

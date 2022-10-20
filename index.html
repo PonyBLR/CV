@@ -10,9 +10,18 @@
 </head>
 <body>
    <header class="header">
-      <div class="container">
+      <div class="burger__header">
+         <div class="close"></div>
+         <nav class="burger__nav">
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#aboutme" class="nav__link">About me</a>
+            <a href="#skills" class="nav__link">Skills</a>
+            <a href="#portfolio" class="nav__link">Portfolio</a>
+            <a href="#contacts" class="nav__link">Contacts</a>
+         </nav>
+      </div>
+      <div class="container header__container">
          <div class="header__wrapper">
-
             <nav class="header__nav">
                <a href="#home" class="nav__link">Home</a>
                <a href="#aboutme" class="nav__link">About me</a>
@@ -25,7 +34,7 @@
       </div>
    </header>
 
-   <main>
+   <main class="main">
       <section class="home" id="home">
          <div class="container">
             <div class="home__wrapper">
@@ -42,15 +51,10 @@
                      <a href="#" class="lang__link">ru</a>
                      <p class="lang__solid">|</p>
                      <a href="#" class="lang__link active">eng</a>
-                  </div>
-
-                  
+                  </div>    
                </div>
-
                <div class="home__bg"></div>
             </div>
-
-            
          </div>
       </section>
 
@@ -145,6 +149,10 @@
                    
                   </div>
                </div>
+               <div class="certificate">
+                     <p>Certificate</p>
+                     <img src="./assets/images/sertivicat.png" alt="certificate">
+               </div>
             </div>
          </div>
       </section>
@@ -157,14 +165,18 @@
                </h2>
                <div class="portfolio__description">
                   <div class="p-description__bg fashion"></div>
-                  <a href="https://rolling-scopes-school.github.io/ponyblr-JSFEPRESCHOOL2022Q2/momentum/">Momentum</a>
+                  <a  href="https://rolling-scopes-school.github.io/ponyblr-JSFEPRESCHOOL2022Q2/momentum/"  target="_blank"><img src="/CV/assets/images/mom1.png" alt="momentum"></a>
+                  
+                  <a href="https://rolling-scopes-school.github.io/ponyblr-JSFEPRESCHOOL2022Q2/momentum/" target="_blank">Momentum</a>
                </div>
                <div class="portfolio__description">
                   <div class="p-description__bg reebok"></div>
+                  <a href="https://rolling-scopes-school.github.io/ponyblr-JSFEPRESCHOOL2022Q2/traverea/" target="_blank" rel="noopener noreferrer"><img src="/CV/assets/images/trav4.png" alt="travel"></a>
                   <a href="https://rolling-scopes-school.github.io/ponyblr-JSFEPRESCHOOL2022Q2/traverea/">Travel</a>
                </div>
                <div class="portfolio__description">
                   <div class="p-description__bg braun"></div>
+                  <a href="https://rolling-scopes-school.github.io/ponyblr-JSFE2022Q3/online-zoo/pages/main/index.html" target="_blank" rel="noopener noreferrer"><img src="/CV/assets/images/zoo1.png" alt="travel"></a>
                   <a href="https://rolling-scopes-school.github.io/ponyblr-JSFE2022Q3/online-zoo/pages/main/index.html">Online-zoo</a>
                </div>
             </div>
@@ -210,7 +222,7 @@
    </footer>
 
 
-
+   <script src="/index.js"></script>
 </body>
 
 </html>
